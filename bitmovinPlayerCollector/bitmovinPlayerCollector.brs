@@ -316,8 +316,6 @@ sub onError()
     sendAnalyticsRequestAndClearValues(errorSample, 0, m.player.playerState)
   end if
 
-  ' Stop collecting data
-  unobserveFields()
 end sub
 
 ' Handler for player's onDestroy callback.
